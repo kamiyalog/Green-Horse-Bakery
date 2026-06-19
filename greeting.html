@@ -9,17 +9,29 @@
 
 <!-- ヘッダー -->
 <header class="header">
-  <h1>緑馬ベーカリー</h1>
+  <div class="logo">緑馬ベーカリー</div>
+
   <nav>
-    <a href="index.html">TOP</a>
-    <a href="greeting.html">あいさつ</a>
-    <a href="#">パン紹介</a>
-    <a href="#">変革</a>
-    <a href="#">お知らせ</a>
-    <a href="#">お問い合わせ</a>
+<a href="greeting.html" class="active">あいさつ</a>
+<a href="bread.html">パン紹介</a>
+<a href="change.html">変革</a>
+<a href="news.html">お知らせ</a>
+<a href="contact.html">お問い合わせ</a>
   </nav>
+
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="キーワードを入力">
+    <button onclick="search()">🔍</button>
+  </div>
 </header>
 
+<!-- ===== ヒーロー ===== -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>緑馬ベーカリー</h1>
+    <p>静かな時間と、焼きたての香りを。</p>
+  </div>
+</div>
 <!-- タイトル -->
 <section class="page-title">
   <h2>あいさつ</h2>
