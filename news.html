@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>お知らせ | 緑馬ベーカリー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">緑馬ベーカリー</div>
+
+  <nav>
+    <a href="index.html">TOP</a>
+    <a href="greeting.html">あいさつ</a>
+    <a href="bread.html">パン紹介</a>
+    <a href="change.html">変革</a>
+    <a href="news.html" class="active">お知らせ</a>
+    <a href="#">お問い合わせ</a>
+  </nav>
+
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="番号を入力">
+    <button onclick="search()">🔍</button>
+  </div>
+</header>
+
+<section class="page-title">
+  <h2>お知らせ</h2>
+</section>
+
+<section class="news-layout">
+
+  <div class="news-list">
+    <h3>お知らせ一覧</h3>
+
+    <a href="#news-hours" class="news-link">
+      <span>2026.06.20</span>
+      営業時間変更のお知らせ
+    </a>
+
+    <a href="#news-blue-tree" class="news-link">
+      <span>2026.06.18</span>
+      新作パン 販売開始のお知らせ
+    </a>
+
+    <a href="#news-transport" class="news-link">
+      <span>2026.06.12</span>
+      送迎サービス一部停止のお知らせ
+    </a>
+
+    <a href="#news-member" class="news-link">
+      <span>2026.06.05</span>
+      会員募集中のお知らせ
+    </a>
+
+    <a href="#news-open" class="news-link">
+      <span>2026.05.01</span>
+      開店のお知らせ
+    </a>
+
+    <a href="#news-site" class="news-link">
+      <span>2026.04.25</span>
+      HP公開のお知らせ
+    </a>
+  </div>
+
+  <div class="news-detail">
+
+    <article id="news-hours" class="news-article">
+      <h3>営業時間変更のお知らせ</h3>
+      <p class="news-date">2026.06.20</p>
+
+      <p>
+        いつも緑馬ベーカリーをご利用いただき、誠にありがとうございます。
+      </p>
+
+      <p>
+        このたび、皆さまにより快適にご利用いただけるよう、
+        営業時間を下記の通り変更いたします。
+      </p>
+
+      <div class="time-change">
+        <div>
+          <span>変更前</span>
+          <strong>8：00～17：00</strong>
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div>
+          <span>変更後</span>
+          <strong>10：00～25：00</strong>
+        </div>
+      </div>
+
+      <p>
+        今後とも緑馬ベーカリーをよろしくお願いいたします。
+      </p>
+    </article>
+
+    <article id="news-blue-tree" class="news-article">
+      <h3>新作パン 販売開始のお知らせ</h3>
+      <p class="news-date">2026.06.18</p>
+
+      <p>
+        新作パン「青の木」の販売を開始いたしました。
+      </p>
+
+      <img src="blue-tree.jpg" alt="青の木" class="news-image">
+
+      <p>
+        青く澄んだ木々をモチーフにした、見た目にも印象的な季節限定商品です。
+        数量に限りがございますので、ぜひ店頭にてご確認ください。
+      </p>
+    </article>
+
+    <article id="news-transport" class="news-article">
+      <h3>送迎サービス一部停止のお知らせ</h3>
+      <p class="news-date">2026.06.12</p>
+
+      <p>
+        いつも緑馬ベーカリーをご利用いただき、誠にありがとうございます。
+      </p>
+
+      <p>
+        現在、送迎サービスにつきまして、状況により一部対応を停止させていただく場合がございます。
+      </p>
+
+      <p>
+        ご利用を希望されるお客様は、事前に会員ページよりご確認ください。
+      </p>
+    </article>
+
+    <article id="news-member" class="news-article">
+      <h3>会員募集中のお知らせ</h3>
+      <p class="news-date">2026.06.05</p>
+
+      <p>
+        緑馬ベーカリーでは、会員様向けの各種サービスをご用意しております。
+      </p>
+
+      <p>
+        新商品のご案内や送迎サービスなど、便利にご利用いただける内容となっております。
+      </p>
+
+      <p>
+        会員登録をご希望の方は、下記よりお進みください。
+      </p>
+
+      <p>
+        <a href="member-entry.html" class="broken-link">会員登録はこちら</a>
+      </p>
+    </article>
+
+    <article id="news-open" class="news-article">
+      <h3>開店のお知らせ</h3>
+      <p class="news-date">2026.05.01</p>
+
+      <p>
+        このたび、緑馬ベーカリーは新たな場所にて営業を開始いたしました。
+      </p>
+
+      <p>
+        静かな環境の中で、皆さまに安心してお召し上がりいただけるパンを
+        ひとつひとつ丁寧に焼き上げてまいります。
+      </p>
+    </article>
+
+    <article id="news-site" class="news-article">
+      <h3>HP公開のお知らせ</h3>
+      <p class="news-date">2026.04.25</p>
+
+      <p>
+        緑馬ベーカリー公式ホームページを公開いたしました。
+      </p>
+
+      <p>
+        店舗情報や商品情報、会員様向けのお知らせなどを順次掲載してまいります。
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>〒000-0000 東京都〇〇区〇〇</p>
+  <p>TEL: 00-0000-0000</p>
+  <p>© 緑馬ベーカリー</p>
+</footer>
+
+<script>
+function search() {
+  const q = document.getElementById("searchBox").value;
+
+  if (q === "AG-1234") {
+    window.location.href = "data.html";
+  } else if (q === "送迎") {
+    window.location.href = "transport.html";
+  } else {
+    alert("該当データは存在しません");
+  }
+}
+</script>
+
+</body>
+</html>
