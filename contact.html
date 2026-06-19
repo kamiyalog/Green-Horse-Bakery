@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ | 緑馬ベーカリー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">緑馬ベーカリー</div>
+
+  <nav>
+    <a href="index.html">TOP</a>
+    <a href="greeting.html">あいさつ</a>
+    <a href="bread.html">パン紹介</a>
+    <a href="change.html">変革</a>
+    <a href="news.html">お知らせ</a>
+    <a href="contact.html" class="active">お問い合わせ</a>
+  </nav>
+
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="キーワードを入力">
+    <button onclick="search()">🔍</button>
+  </div>
+</header>
+
+<section class="page-title">
+  <h2>お問い合わせ</h2>
+</section>
+
+<section class="contact">
+
+  <form class="contact-form" onsubmit="sendForm(event)">
+
+    <div class="form-group">
+      <label>お名前</label>
+      <input type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>メールアドレス</label>
+      <input type="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>お問い合わせ種別</label>
+      <select>
+        <option>商品について</option>
+        <option>会員サービスについて</option>
+        <option>送迎サービスについて</option>
+        <option>その他</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>お問い合わせ内容</label>
+      <textarea rows="8" required></textarea>
+    </div>
+
+    <button type="submit" class="send-btn">送信する</button>
+
+  </form>
+
+  <div id="complete" style="display:none;">
+    <h3>送信を受け付けました</h3>
+
+    <p>
+      内容を確認のうえ、担当者よりご連絡いたします。
+    </p>
+
+    <div class="control-number">
+      <span>管理番号</span>
+      <strong>AG-1234</strong>
+    </div>
+
+    <p class="small-note">
+      お問い合わせの際は、上記番号をお控えください。
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  <p>〒000-0000 長野県〇〇市〇〇</p>
+  <p>TEL:00-0000-0000</p>
+  <p>© 緑馬ベーカリー</p>
+　<p>このWebサイトの内容はフィクションであり、実在の人物・団体とは一切関係がありません。</p>
+
+</footer>
+
+<script>
+function sendForm(event) {
+  event.preventDefault();
+
+  document.querySelector(".contact-form").style.display = "none";
+  document.getElementById("complete").style.display = "block";
+}
+
+function search() {
+  const q = document.getElementById("searchBox").value;
+
+  if (q === "AG-1234") {
+    window.location.href = "data.html";
+  } else if (q === "送迎") {
+    window.location.href = "transport.html";
+  } else {
+    alert("該当データは存在しません");
+  }
+}
+</script>
+
+</body>
+</html>

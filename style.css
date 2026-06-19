@@ -320,7 +320,93 @@ line-height:2;
     flex-direction: column;
   }
 }
+.contact {
+  max-width: 700px;
+  margin: auto;
+  padding: 80px 20px;
+}
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.send-btn {
+  background: #2f4f4f;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+#complete {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#complete h3 {
+  font-size: 30px;
+  color: #2f4f4f;
+  margin-bottom: 30px;
+}
+
+.control-number {
+  margin: 35px auto;
+  padding: 25px;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+.control-number span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.control-number strong {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #2f4f4f;
+}
+
+.small-note {
+  font-size: 12px;
+  color: #777;
+}
 
 /* フッター */
 footer {
