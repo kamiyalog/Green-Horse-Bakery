@@ -1,0 +1,41 @@
+.page-title {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.page-title h2 {
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+.greeting-text {
+  width: 50%;
+}
+
+.greeting-text h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.greeting-text p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.greeting-image {
+  width: 50%;
+}
+
+.greeting-image img {
+  width: 100%;
+  border-radius: 8px;
+}
