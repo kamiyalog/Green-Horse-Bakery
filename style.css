@@ -145,7 +145,56 @@ padding-bottom:80px;
 font-size:16px;
 line-height:2;
 }
+.history-intro {
+  text-align: center;
+  padding: 60px 20px 20px;
+  line-height: 2;
+  font-size: 15px;
+}
 
+.history {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px 90px;
+}
+
+.history-item {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.history-year {
+  width: 90px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.history-item h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.history-item p {
+  margin: 0;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .history-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .history-year {
+    width: auto;
+  }
+}
 /* フッター */
 footer {
   text-align: center;
