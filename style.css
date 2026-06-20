@@ -619,6 +619,67 @@ footer {
   padding-left: 12px;
   border-left: 4px solid #8b0000;
 }
+.registry-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.registry-warning {
+  background: #f8f8f8;
+  border-left: 4px solid #999;
+  padding: 20px 25px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.registry-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+
+.registry-card h3,
+.registry-note h3 {
+  color: #2f4f4f;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.registry-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registry-table th,
+.registry-table td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.registry-table th {
+  width: 180px;
+  color: #555;
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.registry-note {
+  background: #f7f3ed;
+  padding: 30px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.registry-noise {
+  color: #777;
+  font-size: 13px;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {

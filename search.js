@@ -9,6 +9,8 @@ function search() {
     window.location.href = "profile-soji.html";
   } else if (q === "ベーカリーあかむね") {
     window.location.href = "thread-archive.html";
+  } else if (q === "緑馬涼子") {
+    window.location.href = "registry-ryoko.html";
   } else {
     alert("該当データは存在しません");
   }
