@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>会員登録 | 緑馬ベーカリー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="13">
+
+<div id="header"></div>
+
+<section class="page-title">
+  <h2>会員登録</h2>
+</section>
+
+<section class="member-register-page">
+
+  <div class="register-intro">
+    <p>
+      緑馬ベーカリーでは、会員様向けに各種サービスをご用意しております。
+    </p>
+    <p>
+      必須項目をご入力のうえ、登録確認へお進みください。
+    </p>
+  </div>
+
+  <form class="register-form" onsubmit="checkMember(event)">
+
+    <div class="form-group">
+      <label>お名前</label>
+      <input type="text" placeholder="例：緑馬 太郎">
+    </div>
+
+    <div class="form-group">
+      <label>フリガナ</label>
+      <input type="text" placeholder="例：ミドリマ タロウ">
+    </div>
+
+    <div class="form-group">
+      <label>年齢 <span class="required">必須</span></label>
+      <input type="number" id="ageInput" placeholder="例：24" required>
+    </div>
+
+    <div class="form-group">
+      <label>性別 <span class="required">必須</span></label>
+      <select id="genderInput" required>
+        <option value="">選択してください</option>
+        <option value="女性">女性</option>
+        <option value="男性">男性</option>
+        <option value="その他">その他</option>
+        <option value="回答しない">回答しない</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>身長</label>
+      <input type="text" placeholder="例：158.4cm">
+    </div>
+
+    <div class="form-group">
+      <label>体重</label>
+      <input type="text" placeholder="例：47.8kg">
+    </div>
+
+    <div class="form-group">
+      <label>既往歴</label>
+      <input type="text" placeholder="例：特記事項なし">
+    </div>
+
+    <div class="form-group">
+      <label>婚姻歴</label>
+      <input type="text" placeholder="例：なし">
+    </div>
+
+    <div class="form-group">
+      <label>妊娠・出産歴</label>
+      <input type="text" placeholder="例：なし">
+    </div>
+
+    <button type="submit" class="send-btn">登録内容を確認する</button>
+
+  </form>
+
+  <div id="registerResult" class="register-result" style="display:none;"></div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="include.js"></script>
+<script src="search.js"></script>
+
+<script>
+function checkMember(event) {
+  event.preventDefault();
+
+  const age = document.getElementById("ageInput").value.trim();
+  const gender = document.getElementById("genderInput").value;
+  const result = document.getElementById("registerResult");
+
+  document.querySelector(".register-form").style.display = "none";
+  result.style.display = "block";
+
+  if (age === "24" && gender === "女性") {
+    result.innerHTML = `
+      <div class="result-card success">
+        <h3>登録内容を確認しました</h3>
+        <p>
+          お客様は、会員限定の送迎サービスを受けることができます。
+        </p>
+        <p>
+          お手数ですが、「<strong>会員限定予約</strong>」と検索いただき、
+          予約をお願いいたします。
+        </p>
+      </div>
+    `;
+  } else {
+    result.innerHTML = `
+      <div class="result-card failed">
+        <h3>現在送迎サービスは利用できません</h3>
+        <p>
+          大変申し訳ございませんが、現在、特定のデータのお客様のみのご予約となります。
+        </p>
+      </div>
+    `;
+  }
+}
+</script>
+
+</body>
+</html>

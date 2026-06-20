@@ -1109,6 +1109,72 @@ color:#8a5a2b;
   line-height: 2;
   font-size: 15px;
 }
+/* ===== 会員登録 ===== */
+
+.member-register-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.register-intro {
+  background: #f8f8f8;
+  border-left: 4px solid #2f4f4f;
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.required {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: #8b0000;
+  color: white;
+  font-size: 11px;
+  border-radius: 2px;
+}
+
+.register-result {
+  margin-top: 40px;
+}
+
+.result-card {
+  padding: 40px;
+  border: 1px solid #ddd;
+  background: #fff;
+  line-height: 2;
+}
+
+.result-card h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.result-card.success {
+  border-left: 6px solid #2f4f4f;
+}
+
+.result-card.success h3 {
+  color: #2f4f4f;
+}
+
+.result-card.failed {
+  border-left: 6px solid #999;
+  background: #f8f8f8;
+}
+
+.result-card.failed h3 {
+  color: #555;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {

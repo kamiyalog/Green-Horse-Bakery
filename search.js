@@ -17,6 +17,8 @@ function search() {
   window.location.href = "shinonome-award.html";
 } else if (q === "明坂朱里") {
   window.location.href = "member-akari.html";
+} else if (q === "会員登録") {
+  window.location.href = "member-register.html";
   } else {
     alert("該当データは存在しません");
   }
