@@ -1,24 +1,24 @@
 async function includeHTML(id, file) {
   const target = document.getElementById(id);
   if (!target) return;
+
   const response = await fetch(file);
-  target.innerHTML = await response.text();
-}
+  const html = await response.text();
+  target.innerHTML = html;
 
-async function setupCommonParts() {
-  await includeHTML("header", "header.html");
-  await includeHTML("footer", "footer.html");
-
-  const current = document.body.dataset.current;
-  if (current) {
-    const activeLink = document.querySelector(`[data-nav="${current}"]`);
-    if (activeLink) activeLink.classList.add("active");
+  if (id === "footer") {
+    setPageNumber();
   }
-
-  const pageNumber = document.getElementById("pageNumber");
-  const page = document.body.dataset.page;
-  const total = document.body.dataset.total;
-  if (pageNumber && page && total) pageNumber.textContent = `${page} / ${total}`;
 }
 
-setupCommonParts();
+function setPageNumber() {
+  const page = document.body.dataset.page;
+  const pageNumber = document.getElementById("pageNumber");
+
+  if (page && pageNumber) {
+    pageNumber.textContent = page + " / 25";
+  }
+}
+
+includeHTML("header", "header.html");
+includeHTML("footer", "footer.html");
