@@ -1600,6 +1600,105 @@ color:
 .report-btn:hover {
   opacity: 0.85;
 }
+/* ===== 通報前 情報整理 ===== */
+
+.report-check-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 90px 20px 120px;
+}
+
+.report-paper {
+  background: #f4f0e8;
+  color: #222;
+  padding: 50px;
+  border: 1px solid #c8c0b2;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+}
+
+.paper-header {
+  border-bottom: 2px solid #222;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.paper-header p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.paper-header h1 {
+  font-size: 32px;
+  margin: 0 0 12px;
+}
+
+.paper-header span {
+  font-size: 14px;
+  color: #555;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.paper-line {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px dashed #777;
+  padding-bottom: 14px;
+}
+
+.paper-line label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.paper-line input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.paper-line input:focus {
+  outline: none;
+  background: rgba(255,255,255,0.45);
+}
+
+.report-submit-btn {
+  margin-top: 35px;
+  align-self: center;
+  padding: 16px 60px;
+  background: #111;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+
+.report-submit-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .report-paper {
+    padding: 30px 20px;
+  }
+
+  .paper-line {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {

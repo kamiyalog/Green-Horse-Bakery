@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>情報整理 | 通報前確認</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="23" class="dark-page">
+
+<div id="header"></div>
+
+<section class="report-check-page">
+
+  <div class="report-paper">
+
+    <div class="paper-header">
+      <p>REPORT SHEET</p>
+      <h1>通報前 情報整理</h1>
+      <span>取得情報をもとに、空欄を補完してください。</span>
+    </div>
+
+    <form onsubmit="checkReport(event)" class="report-form">
+
+      <div class="paper-line">
+        <label>朱里のフルネーム</label>
+        <input type="text" id="akariName" placeholder="例：〇〇 〇〇">
+      </div>
+
+      <div class="paper-line">
+        <label>店主の現在店名</label>
+        <input type="text" id="shopName" placeholder="例：〇〇ベーカリー">
+      </div>
+
+      <div class="paper-line">
+        <label>研究機関名</label>
+        <input type="text" id="labName" placeholder="例：〇〇研究所">
+      </div>
+
+      <div class="paper-line">
+        <label>何を使って送っていた</label>
+        <input type="text" id="transportName" placeholder="例：〇〇送迎">
+      </div>
+
+      <div class="paper-line">
+        <label>朱里の現在地</label>
+        <input type="text" id="location" placeholder="例：〇〇 〇〇号室">
+      </div>
+
+      <div class="paper-line">
+        <label>朱里の移送日</label>
+        <input type="text" id="transferDate" placeholder="例：2026/00/00">
+      </div>
+
+      <button type="submit" class="report-submit-btn">完了</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="include.js"></script>
+<script src="search.js"></script>
+
+<script>
+function normalizeText(value) {
+  return value
+    .trim()
+    .replace(/\s+/g, "")
+    .replace(/　+/g, "");
+}
+
+function checkReport(event) {
+  event.preventDefault();
+
+  const akariName = normalizeText(document.getElementById("akariName").value);
+  const shopName = normalizeText(document.getElementById("shopName").value);
+  const labName = normalizeText(document.getElementById("labName").value);
+  const transportName = normalizeText(document.getElementById("transportName").value);
+  const location = normalizeText(document.getElementById("location").value);
+  const transferDate = normalizeText(document.getElementById("transferDate").value);
+
+  const ok =
+    akariName === "明坂朱里" &&
+    shopName === "緑馬ベーカリー" &&
+    labName === "東雲生体適応研究所" &&
+    transportName === "最上送迎" &&
+    location === "東雲生体適応研究所第3研究棟307号室" &&
+    (
+      transferDate === "2026/06/20" ||
+      transferDate === "2026/6/20" ||
+      transferDate === "2026年6月20日"
+    );
+
+  if (ok) {
+    window.location.href = "good-ending.html";
+  } else {
+    window.location.href = "bad-ending.html";
+  }
+}
+</script>
+
+</body>
+</html>
