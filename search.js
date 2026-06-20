@@ -7,6 +7,8 @@ function search() {
     window.location.href = "transport.html";
   } else if (q === "緑馬宗司") {
     window.location.href = "profile-soji.html";
+  } else if (q === "ベーカリーあかむね") {
+    window.location.href = "thread-archive.html";
   } else {
     alert("該当データは存在しません");
   }
