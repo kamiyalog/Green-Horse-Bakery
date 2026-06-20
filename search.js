@@ -15,6 +15,8 @@ function search() {
     window.location.href = "hayakawa-bakery.html";
 } else if (q === "東雲大学") {
   window.location.href = "shinonome-award.html";
+} else if (q === "明坂朱里") {
+  window.location.href = "member-akari.html";
   } else {
     alert("該当データは存在しません");
   }
