@@ -25,6 +25,9 @@ function search() {
   window.location.href = "mogami-transport.html";
 } else if (q === "AA-5381") {
   window.location.href = "adaptive-data.html";
+} else if (q === "東雲生体適応研究所") {
+  window.location.href = "shinonome-research.html";
+
   } else {
     alert("該当データは存在しません");
   }
