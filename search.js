@@ -23,6 +23,8 @@ function search() {
   window.location.href = "member-reservation.html";
 } else if (q === "最上送迎") {
   window.location.href = "mogami-transport.html";
+} else if (q === "AA-5381") {
+  window.location.href = "adaptive-data.html";
   } else {
     alert("該当データは存在しません");
   }
