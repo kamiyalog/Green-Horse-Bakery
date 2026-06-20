@@ -1796,6 +1796,106 @@ color:
     font-size: 26px;
   }
 }
+/* ===== 成功エンド ===== */
+
+.good-ending-body {
+  background: #f8f6f0;
+  color: #333;
+}
+
+.good-ending-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 20px 120px;
+  text-align: center;
+}
+
+.good-ending-label {
+  margin-bottom: 45px;
+}
+
+.good-ending-label span {
+  color: #2f4f4f;
+  letter-spacing: 5px;
+  font-size: 18px;
+  border-bottom: 1px solid #2f4f4f;
+  padding-bottom: 10px;
+}
+
+.good-ending-message h1 {
+  color: #2f4f4f;
+  font-size: 36px;
+  line-height: 1.9;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.good-ending-message p {
+  color: #444;
+  font-size: 18px;
+  line-height: 2.1;
+  margin-bottom: 18px;
+}
+
+.good-photo-section {
+  position: relative;
+  max-width: 780px;
+  margin: 70px auto;
+  background: white;
+  padding: 18px;
+  box-shadow: 0 8px 35px rgba(0,0,0,0.15);
+}
+
+.good-photo-section img {
+  width: 100%;
+  display: block;
+}
+
+.thanks-text {
+  position: absolute;
+  right: 45px;
+  bottom: 38px;
+  color: white;
+  font-size: 48px;
+  letter-spacing: 4px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.light-share {
+  border-top: 1px solid #ddd;
+}
+
+.light-share p {
+  color: #333;
+}
+
+.x-share-btn-light {
+  display: inline-block;
+  width: 80%;
+  max-width: 460px;
+  padding: 18px 30px;
+  margin: 15px 0 25px;
+  border: 1px solid #2f4f4f;
+  color: #2f4f4f;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background: white;
+}
+
+.x-share-btn-light:hover {
+  background: #eef3ef;
+}
+
+.ending-back-light {
+  margin-top: 70px;
+}
+
+.ending-back-light a {
+  color: #2f4f4f;
+  text-decoration: underline;
+  font-size: 14px;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
