@@ -416,7 +416,38 @@ footer {
   background: #f5f5f5;
   color: #555;
 }
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background: #f7f3ed;
+  text-align: center;
+}
 
+.error-page h1 {
+  font-size: 80px;
+  margin: 0;
+  color: #2f4f4f;
+}
+
+.error-page h2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.error-page p {
+  font-size: 14px;
+  color: #666;
+}
+
+.error-back {
+  margin-top: 30px;
+  color: #2f4f4f;
+  text-decoration: underline;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
