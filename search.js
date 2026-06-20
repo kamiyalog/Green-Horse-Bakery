@@ -27,6 +27,8 @@ function search() {
   window.location.href = "adaptive-data.html";
 } else if (q === "東雲生体適応研究所") {
   window.location.href = "shinonome-research.html";
+} else if (q === "食品依存形成機序") {
+  window.location.href = "dependency-report.html";
 
   } else {
     alert("該当データは存在しません");

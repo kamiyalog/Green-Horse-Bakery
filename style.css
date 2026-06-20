@@ -1521,6 +1521,85 @@ color:
   color: #999;
   font-size: 13px;
 }
+/* ===== 研究レポート ===== */
+
+.dependency-report-page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 80px 20px 120px;
+}
+
+.report-section {
+  border: 1px solid #333;
+  background: #0b0b0b;
+  padding: 30px;
+  margin-bottom: 35px;
+}
+
+.report-section h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 12px;
+}
+
+.report-section p {
+  color: #d0d0d0;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.route-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+
+.route-box div {
+  border: 1px solid #444;
+  background: #111;
+  padding: 18px;
+}
+
+.route-box span {
+  color: #777;
+  text-align: center;
+}
+
+.long-scroll-space {
+  height: 700px;
+}
+
+.report-choice {
+  text-align: center;
+  padding: 80px 20px;
+  border-top: 1px solid #333;
+}
+
+.report-choice p {
+  color: #eee;
+  line-height: 2.2;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.report-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 42px;
+  background: #8b0000;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.report-btn:hover {
+  opacity: 0.85;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
