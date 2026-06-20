@@ -1699,6 +1699,154 @@ color:
     gap: 10px;
   }
 }
+/* ===== 失敗エンド ===== */
+
+.bad-ending-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 20px 120px;
+  text-align: center;
+}
+
+.ending-label {
+  margin-bottom: 45px;
+}
+
+.ending-label span {
+  color: #b53a3a;
+  letter-spacing: 5px;
+  font-size: 18px;
+  border-bottom: 1px solid #8b0000;
+  padding-bottom: 10px;
+}
+
+.ending-message h1 {
+  color: #f0f0f0;
+  font-size: 34px;
+  line-height: 1.9;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.ending-message p {
+  color: #d0d0d0;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.new-bread-section {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto 70px;
+}
+
+.new-bread-section img {
+  width: 100%;
+  display: block;
+  border: 1px solid #333;
+}
+
+.new-pop {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  background: #8b0000;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50%;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.bread-pop-card {
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  width: 330px;
+  background: #f4eee5;
+  color: #5b1919;
+  border: 2px solid #8b0000;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+}
+
+.bread-pop-card .pop-small {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.bread-pop-card h2 {
+  margin: 8px 0 0;
+  font-size: 42px;
+  letter-spacing: 5px;
+}
+
+.pop-reading {
+  margin: 4px 0 14px;
+  font-size: 13px;
+}
+
+.bread-pop-card p {
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.x-share-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 35px;
+  border-top: 1px solid #444;
+}
+
+.x-share-section p {
+  color: #ddd;
+}
+
+.x-share-btn {
+  display: inline-block;
+  width: 80%;
+  max-width: 460px;
+  padding: 18px 30px;
+  margin: 15px 0 25px;
+  border: 1px solid #ccc;
+  color: #eee;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.x-share-btn:hover {
+  background: #111;
+}
+
+.ending-back {
+  margin-top: 70px;
+}
+
+.ending-back a {
+  color: #ddd;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .bread-pop-card {
+    position: static;
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .new-pop {
+    top: 12px;
+    left: 12px;
+  }
+
+  .ending-message h1 {
+    font-size: 26px;
+  }
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
