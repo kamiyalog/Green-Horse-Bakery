@@ -21,6 +21,8 @@ function search() {
   window.location.href = "member-register.html";
 } else if (q === "会員限定予約") {
   window.location.href = "member-reservation.html";
+} else if (q === "最上送迎") {
+  window.location.href = "mogami-transport.html";
   } else {
     alert("該当データは存在しません");
   }

@@ -1201,7 +1201,146 @@ color:#8a5a2b;
 .reservation-result {
   margin-top: 40px;
 }
+/* ===== 最上送迎 ===== */
 
+.transport-page{
+
+max-width:900px;
+
+margin:auto;
+
+padding:
+
+70px 20px 90px;
+
+}
+
+
+.transport-warning{
+
+background:#f8f8f8;
+
+padding:
+
+20px;
+
+margin-bottom:
+
+40px;
+
+border-left:
+
+4px solid #999;
+
+}
+
+
+.transport-table{
+
+width:100%;
+
+border-collapse:
+
+collapse;
+
+background:white;
+
+}
+
+
+.transport-table th{
+
+background:
+
+#2f4f4f;
+
+color:white;
+
+padding:
+
+16px;
+
+font-weight:
+
+normal;
+
+}
+
+
+.transport-table td{
+
+padding:
+
+18px;
+
+border-bottom:
+
+1px solid #e5e5e5;
+
+text-align:center;
+
+}
+
+
+.important-record{
+
+background:
+
+#fffaf2;
+
+}
+
+
+.confirmed{
+
+font-weight:bold;
+
+color:
+
+#8b0000;
+
+}
+
+
+.transport-note{
+
+margin-top:
+
+50px;
+
+padding:
+
+30px;
+
+background:
+
+#f7f7f7;
+
+}
+
+
+.transport-note h3{
+
+color:
+
+#2f4f4f;
+
+margin-top:0;
+
+}
+
+
+.small-note{
+
+font-size:
+
+12px;
+
+color:
+
+#777;
+
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
