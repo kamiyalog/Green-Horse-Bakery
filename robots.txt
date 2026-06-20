@@ -1,0 +1,27 @@
+User-agent: *
+
+# Green Horse Bakery
+# Fresh bread every day.
+
+# We sincerely apologize.
+# The following data has been restricted.
+
+Disallow: /member-akari.html
+Disallow: /member-register.html
+Disallow: /member-reservation.html
+
+Disallow: /mogami-transport.html
+
+# Shinonome Institute
+# Access denied.
+
+Disallow: /adaptive-data.html
+Disallow: /shinonome-research.html
+Disallow: /dependency-report.html
+
+# Experiment terminated.
+
+Disallow: /good-ending.html
+Disallow: /bad-ending.html
+
+Sitemap: https://green-horse-bakery.com/sitemap.xml
