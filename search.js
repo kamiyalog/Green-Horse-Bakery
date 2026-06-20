@@ -19,6 +19,8 @@ function search() {
   window.location.href = "member-akari.html";
 } else if (q === "会員登録") {
   window.location.href = "member-register.html";
+} else if (q === "会員限定予約") {
+  window.location.href = "member-reservation.html";
   } else {
     alert("該当データは存在しません");
   }

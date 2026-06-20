@@ -1175,6 +1175,33 @@ color:#8a5a2b;
 .result-card.failed h3 {
   color: #555;
 }
+/* ===== 会員限定予約 ===== */
+
+.reservation-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.reservation-intro {
+  background: #f8f8f8;
+  border-left: 4px solid #2f4f4f;
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.reservation-result {
+  margin-top: 40px;
+}
+
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
