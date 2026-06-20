@@ -1896,6 +1896,15 @@ color:
   text-decoration: underline;
   font-size: 14px;
 }
+.search form{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {

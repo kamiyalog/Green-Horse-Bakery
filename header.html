@@ -8,8 +8,22 @@
     <a href="news.html" data-nav="news">お知らせ</a>
     <a href="contact.html" data-nav="contact">お問い合わせ</a>
   </nav>
-  <div class="search">
-    <input type="text" id="searchBox" placeholder="キーワードを入力">
-    <button onclick="search()">🔍</button>
-  </div>
+ <div class="search">
+
+  <form onsubmit="search(); return false;">
+
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="キーワードを入力">
+
+    <button type="submit">
+
+      🔍
+
+    </button>
+
+  </form>
+
+</div>
 </header>
