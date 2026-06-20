@@ -13,6 +13,8 @@ function search() {
     window.location.href = "registry-ryoko.html";
   } else if (q === "早川ベーカリー") {
     window.location.href = "hayakawa-bakery.html";
+} else if (q === "東雲大学") {
+  window.location.href = "shinonome-award.html";
   } else {
     alert("該当データは存在しません");
   }

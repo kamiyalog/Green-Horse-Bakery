@@ -943,6 +943,114 @@ margin-top:0;
 color:#8a5a2b;
 
 }
+/* ===== 東雲大学ページ ===== */
+
+.university-header {
+  background: #24476b;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.university-header h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 4px;
+}
+
+.university-header p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.university-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 20px 90px;
+}
+
+.university-notice {
+  margin-bottom: 50px;
+  line-height: 2;
+}
+
+.university-notice h3 {
+  font-size: 26px;
+  color: #24476b;
+  margin-bottom: 24px;
+}
+
+.award-card {
+  border: 1px solid #ddd;
+  padding: 40px;
+  margin-bottom: 50px;
+  background: #fff;
+}
+
+.grand-prize {
+  border-top: 6px solid #24476b;
+  background: #f8fbff;
+}
+
+.award-label {
+  display: inline-block;
+  background: #24476b;
+  color: white;
+  padding: 6px 16px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.award-card h3 {
+  font-size: 28px;
+  color: #24476b;
+  margin-bottom: 15px;
+}
+
+.award-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.award-card p {
+  line-height: 2;
+}
+
+.award-list {
+  margin-bottom: 50px;
+}
+
+.award-list h3,
+.university-note h3 {
+  color: #24476b;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.award-item {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 0;
+}
+
+.award-item span {
+  width: 90px;
+  color: #24476b;
+  font-weight: bold;
+}
+
+.award-item p {
+  margin: 0;
+}
+
+.university-note {
+  background: #f7f7f7;
+  padding: 30px;
+  line-height: 2;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
