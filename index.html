@@ -1,170 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>緑馬ベーカリー</title>
-
-<!-- フォント -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
-<style>
-/* ===== 全体 ===== */
-body {
-  margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  background: url("bg.jpg");
-  background-size: cover;
-  color: #333;
-}
-
-/* ===== ヘッダー ===== */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: white;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  padding: 8px 12px;
-}
-
-nav a:hover {
-  color: #2f4f4f;
-}
-
-/* ===== 検索 ===== */
-.search {
-  display: flex;
-  align-items: center;
-}
-
-.search input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  font-size: 12px;
-}
-
-.search button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* ===== ヒーロー ===== */
-.hero {
-  height: 50vh;
-  background: url("hero.jpg") center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.3);
-}
-
-
-.hero-content {
-  position: relative;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-  font-size: 18px;
-}
-
-/* ===== セクション ===== */
-.section {
-  padding: 80px 20px;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
-.section img {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 20px;
-}
-
-/* ===== フッター ===== */
-footer {
-  text-align: center;
-  padding: 40px;
-  font-size: 10px;
-  background: #f5f5f5;
-  margin-top: 60px;
-}
-
-/* ===== ボタン ===== */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #8b0000;
-  color: white;
-  text-decoration: none;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>緑馬ベーカリー</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body data-current="top" data-page="1" data-total="24">
 
-<body>
+<div id="header"></div>
 
-<!-- ===== ヘッダー ===== -->
-<header class="header">
-  <div class="logo">緑馬ベーカリー</div>
-
-  <nav>
-<a href="greeting.html" class="active">あいさつ</a>
-<a href="bread.html" class="active">パン紹介</a>
-<a href="change.html">変革</a>
-<a href="news.html">お知らせ</a>
-<a href="contact.html">お問い合わせ</a>
-  </nav>
-
-  <div class="search">
-    <input type="text" id="searchBox" placeholder="キーワードを入力">
-    <button onclick="search()">🔍</button>
-  </div>
-</header>
-
-<!-- ===== ヒーロー ===== -->
 <div class="hero">
   <div class="hero-content">
     <h1>緑馬ベーカリー</h1>
@@ -172,7 +16,6 @@ footer {
   </div>
 </div>
 
-<!-- ===== あいさつ ===== -->
 <div class="section">
   <p>
     当店では、厳選した素材と落ち着いた空間をご提供しております。<br>
@@ -180,31 +23,9 @@ footer {
   </p>
 </div>
 
+<div id="footer"></div>
 
-<!-- ===== フッター ===== -->
-<footer>
-  <p>〒000-0000 長野県〇〇市〇〇</p>
-  <p>TEL: 00-0000-0000</p>
-  <p>© 緑馬ベーカリー</p>
-　<p>このWebサイトの内容はフィクションであり、実在の人物・団体とは一切関係がありません。</p>
-</footer>
-
-<!-- ===== 検索ロジック ===== -->
-<script>
-function search() {
-  const q = document.getElementById("searchBox").value;
-
-  if (q === "AG-1234") {
-    window.location.href = "data.html";
-  } else if (q === "送迎") {
-    window.location.href = "transport.html";
-  } else {
-    alert("該当データは存在しません");
-  }
-}
-</script>
-
-<!-- staff only -->
-
+<script src="search.js"></script>
+<script src="include.js"></script>
 </body>
 </html>

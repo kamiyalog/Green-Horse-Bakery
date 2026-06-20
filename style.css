@@ -525,6 +525,12 @@ footer {
     width: auto;
   }
 }
+.page-number {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #777;
+}
+
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
