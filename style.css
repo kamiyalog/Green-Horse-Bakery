@@ -1746,53 +1746,6 @@ color:
   border: 1px solid #333;
 }
 
-.new-pop {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  z-index: 2;
-  background: #8b0000;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 50%;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.bread-pop-card {
-  position: absolute;
-  right: 35px;
-  bottom: 35px;
-  width: 330px;
-  background: #f4eee5;
-  color: #5b1919;
-  border: 2px solid #8b0000;
-  padding: 24px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
-}
-
-.bread-pop-card .pop-small {
-  margin: 0;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.bread-pop-card h2 {
-  margin: 8px 0 0;
-  font-size: 42px;
-  letter-spacing: 5px;
-}
-
-.pop-reading {
-  margin: 4px 0 14px;
-  font-size: 13px;
-}
-
-.bread-pop-card p {
-  line-height: 1.8;
-  font-size: 13px;
-}
-
 .x-share-section {
   max-width: 700px;
   margin: 0 auto;
@@ -1838,11 +1791,7 @@ color:
     margin-top: 20px;
   }
 
-  .new-pop {
-    top: 12px;
-    left: 12px;
-  }
-
+ 
   .ending-message h1 {
     font-size: 26px;
   }
