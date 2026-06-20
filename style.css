@@ -680,6 +680,75 @@ footer {
   color: #777;
   font-size: 13px;
 }
+.fake-site-hero {
+  height: 42vh;
+  background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url("hayakawa-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.fake-site-hero h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.fake-site-hero p {
+  font-size: 18px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.hayakawa-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.hayakawa-intro,
+.hayakawa-section {
+  margin-bottom: 60px;
+}
+
+.hayakawa-intro h2,
+.hayakawa-section h2 {
+  font-size: 26px;
+  color: #8a5a2b;
+  margin-bottom: 24px;
+}
+
+.hayakawa-intro p,
+.hayakawa-section p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.partner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partner-list li {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fffdf8;
+}
+
+.hayakawa-news {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 24px;
+}
+
+.hayakawa-news h3 {
+  margin-top: 0;
+  color: #8a5a2b;
+  font-size: 20px;
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {
