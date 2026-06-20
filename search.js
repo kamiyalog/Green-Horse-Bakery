@@ -1,0 +1,13 @@
+function search() {
+  const q = document.getElementById("searchBox").value.trim();
+
+  if (q === "AG-1234") {
+    window.location.href = "data.html";
+  } else if (q === "送迎") {
+    window.location.href = "transport.html";
+  } else if (q === "緑馬宗司") {
+    window.location.href = "profile-soji.html";
+  } else {
+    alert("該当データは存在しません");
+  }
+}

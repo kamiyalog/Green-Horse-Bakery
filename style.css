@@ -448,6 +448,83 @@ footer {
   color: #2f4f4f;
   text-decoration: underline;
 }
+.profile-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 20px 90px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 50px;
+}
+
+.profile-card h3 {
+  font-size: 30px;
+  color: #2f4f4f;
+  margin-bottom: 5px;
+}
+
+.profile-kana {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.profile-card p,
+.profile-note p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.profile-history {
+  margin-bottom: 50px;
+}
+
+.profile-history h3,
+.profile-note h3 {
+  font-size: 24px;
+  color: #2f4f4f;
+  margin-bottom: 25px;
+}
+
+.profile-history-item {
+  display: flex;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.profile-history-item span {
+  width: 90px;
+  flex-shrink: 0;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.profile-history-item p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.profile-note {
+  background: #f8f8f8;
+  padding: 30px;
+  border-left: 4px solid #2f4f4f;
+}
+
+@media (max-width: 768px) {
+  .profile-history-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .profile-history-item span {
+    width: auto;
+  }
+}
 /* スマホ対応 */
 @media (max-width: 768px) {
   .header {

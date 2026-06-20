@@ -17,8 +17,8 @@
     <a href="greeting.html">あいさつ</a>
     <a href="bread.html">パン紹介</a>
     <a href="change.html" class="active">変革</a>
-    <a href="#">お知らせ</a>
-    <a href="#">お問い合わせ</a>
+　　<a href="news.html">お知らせ</a>
+　　<a href="contact.html">お問い合わせ</a>
   </nav>
 
   <div class="search">
@@ -149,19 +149,6 @@
 　<p>このWebサイトの内容はフィクションであり、実在の人物・団体とは一切関係がありません。</p>
 </footer>
 
-<script>
-function search() {
-  const q = document.getElementById("searchBox").value;
-
-  if (q === "AG-1234") {
-    window.location.href = "data.html";
-  } else if (q === "送迎") {
-    window.location.href = "transport.html";
-  } else {
-    alert("該当データは存在しません");
-  }
-}
-</script>
-
+<script src="search.js"></script>
 </body>
 </html>
