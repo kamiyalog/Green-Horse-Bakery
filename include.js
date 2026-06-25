@@ -16,7 +16,7 @@ function setPageNumber() {
   const pageNumber = document.getElementById("pageNumber");
 
   if (page && pageNumber) {
-    pageNumber.textContent = page + " / 20";
+    pageNumber.textContent = page + " / 26";
   }
 }
 

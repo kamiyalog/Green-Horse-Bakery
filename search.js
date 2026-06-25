@@ -23,8 +23,20 @@ function search() {
     window.location.href = "adaptive-data.html";
   } else if (q === "東雲生体適応研究所") {
     window.location.href = "shinonome-research.html";
-  } else if (q === "食品依存形成機序") {
+  } else if (q === "早川亮太") {
+　  window.location.href = "profile-hayakawa-ryota.html";
+　} else if (q === "食品依存形成機序研究レポート") {
     window.location.href = "dependency-report.html";
+  } else if (q === "管理番号に関するルール") {
+    window.location.href = "management-number-rule.html";
+  } else if (q === "新渡戸亮太") {
+    window.location.href = "profile-nitobe-ryota.html";
+  } else if (q === "ベーカリー新渡戸") {
+    window.location.href = "report-bakery-nitobe.html";
+　} else if (q === "緑馬宗司日記データ") {
+    window.location.href = "record-midorima-souji.html";
+  } else if (q === "明坂音夢") {
+    window.location.href = "profile-akasaka-nemu.html";
   } else {
     alert("該当データは存在しません");
   }

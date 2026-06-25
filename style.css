@@ -1335,13 +1335,99 @@ color:
   color: #e5e5e5;
 }
 
-.blackout {
+.blackout{
+    display:inline-block;
+    width:100px;
+    height:1.2em;
+    background:#000;
+    vertical-align:middle;
+    margin:0 4px;
+}
+
+.blackout.short{
+    width:70px;
+}
+.document-box{
+    background:#fafafa;
+    border:1px solid #d8d8d8;
+    padding:30px;
+    line-height:2;
+    margin-top:20px;
+}
+
+.document-box hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.note{
+    margin-top:15px;
+    font-size:0.9em;
+    color:#777;
+}
+.dark-document-box {
+  background: #111;
+  border: 1px solid #333;
+  padding: 32px;
+  line-height: 2;
+  color: #eee;
+}
+
+.dark-document-box h3 {
+  margin-top: 30px;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+.profile-position {
+  font-size: 1.1em;
+  margin-bottom: 28px;
+}
+
+.dark-blackout {
   display: inline-block;
+  width: 54px;
+  height: 1.1em;
   background: #000;
-  color: #000;
-  padding: 0 12px;
-  border: 1px solid #222;
-  user-select: none;
+  border: 1px solid #333;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.small-note {
+  color: #aaa;
+  font-size: 0.9em;
+}
+.record-entry {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid #333;
+}
+
+.record-entry h3 {
+  color: #fff;
+  font-size: 1.05em;
+  margin-bottom: 18px;
+}
+
+.record-entry p {
+  color: #ddd;
+  line-height: 2;
+  margin-bottom: 18px;
+}
+
+.record-end {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #aaa;
+  letter-spacing: 0.08em;
+}
+.dark-blackout.long {
+  width: 220px;
 }
 /* ===== 研究照会 ===== */
 
