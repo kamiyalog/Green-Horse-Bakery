@@ -8,7 +8,7 @@
     const text = shareButton.dataset.shareText ?? '';
     const parameters = new URLSearchParams({
       text,
-      url: 'https://note.com/ユーザー名/n/記事ID'
+      url: 'https://note.com/mei_takanashi/n/n1f73601120c6'
     });
 
     window.open(
